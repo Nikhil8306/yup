@@ -8,25 +8,28 @@
 
   background: var(--aw-bg);
   color: var(--aw-text);
-  padding: clamp(1.5rem, 5vw, 4rem);
+  /* padding: clamp(1.5rem, 5vw, 4rem); */
+  padding: 4.5rem 9.2rem;
 }
 
 .aw__inner {
-  max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  width: 100%;
   display: grid;
   gap: clamp(1.5rem, 3vw, 2.5rem);
+  /* border: solid black 2px; */
 }
 
 /* Copy column */
 .aw__copy {
-  display: grid;
-  gap: 1rem;
+    flex: 1;
+    display: grid;
+    gap: 1rem;
 }
 
 .aw__title {
   font-size: clamp(1.8rem, 2.5vw, 2.6rem);
-  line-height: 1.15;
+  /* line-height: 1.15; */
   margin: 0;
   letter-spacing: -0.02em;
 }
@@ -34,7 +37,6 @@
 .aw__subtitle {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   font-weight: 600;
-  margin: 0.25rem 0 0.25rem;
   color: var(--aw-text);
 }
 
@@ -72,7 +74,7 @@
 /* Gallery */
 .aw__gallery {
   display: grid;
-  gap: 16px;
+  gap: 1rem;
 }
 
 /* Image card base */
@@ -93,11 +95,13 @@
 
 /* Mobile-first gallery layout */
 .aw__gallery {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr;
   grid-auto-rows: 140px;
 }
 .aw__card--tall {
-  grid-column: 1 / -1;
+  /* grid-column: 2 / -2; */
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row: span 2;
   min-height: 280px;
 }

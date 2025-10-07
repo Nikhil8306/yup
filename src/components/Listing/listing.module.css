@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* border: solid black 2px; */
+    padding: 0 9.2rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;    
+    gap: 2rem;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    min-width: 25rem;
+    font-size: 1.1rem;
+}
+
+.item > img {
+    width: 2rem;
+    height: 2rem;
+}

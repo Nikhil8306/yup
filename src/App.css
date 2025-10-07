@@ -34,3 +34,27 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 400) {
+    html {
+        font-size : 7px
+    }
+}

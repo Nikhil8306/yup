@@ -18,7 +18,7 @@
 }
 
 .steps {
-    height: 17rem;
+    /* height: 17rem; */
     display: flex;
     gap: 2rem;
     margin-top: 5rem;
@@ -27,4 +27,26 @@
 
 .button {
     margin-top: 5rem;
+}
+
+@media (max-width: 900px) {
+    .container  {
+        padding: 0 5rem;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .infocard {
+        min-height: 20rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .container  {
+        padding: 0 2rem;
+    }
+
+    
 }

@@ -24,6 +24,7 @@ function Home() {
                     <SearchBar></SearchBar>
                     
                 </div>
+                
 
                 <div className={styles.end}>
                     The Marketplace to Connect with Pros

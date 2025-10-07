@@ -12,3 +12,16 @@
     font-size: 1.45rem;
     /* position: absolute; */
 }
+
+
+@media (max-width: 900px) {
+    .container  {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .container  {
+        padding: 0 2rem;
+    }
+}

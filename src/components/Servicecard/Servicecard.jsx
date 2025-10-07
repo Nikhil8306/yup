@@ -1,6 +1,6 @@
 import { MoveRightIcon } from "lucide-react";
 
-function Servicecard({icon, heading, avail}) {
+function Servicecard({icon, heading, avail, description}) {
     return <>
 
         <div className={styles.container}>
@@ -12,9 +12,12 @@ function Servicecard({icon, heading, avail}) {
                 {heading}
             </div>
 
-            <div className={styles.avail}>
+            {avail&&<div className={styles.avail}>
                 {avail} pros available <MoveRightIcon strokeWidth={"1px"} style={{marginLeft:"0.5rem"}}/>
-            </div>
+            </div>}
+            {description&&<div className={styles.avail}>
+                {description}
+            </div>}
         </div>
 
     </>

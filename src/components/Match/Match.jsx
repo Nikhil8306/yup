@@ -21,7 +21,7 @@ function Match ({className}) {
             </div>
 
             <div className={styles.image}>
-                <img src={matchImg} alt="Math with pros easily" />
+                <img src={matchImg} alt="Match with pros easily" />
             </div>
         </div>
     </>

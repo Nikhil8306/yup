@@ -1,0 +1,14 @@
+.refinecontainer {
+    width: 100%;
+    display: flex;
+    padding: 0 9.2rem;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: solid black 2px; */
+}
+
+.servicecontainer {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}

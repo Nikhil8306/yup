@@ -25,11 +25,11 @@ function Referralsource() {
                     </Description>
 
                     <div className={styles.benefits}>
-                        <Benefit icon={<CheckCircle size={"1rem"}/>} about={"No Cost, No Obligation"}/>
-                        <Benefit icon={<Volume2/>} about={"No Spam Calls or Selling Your Info"}/>
-                        <Benefit icon={<Shield/>} about={"Vetted, licensed, and insured painters"}/>
-                        <Benefit icon={<Search size={"1rem"}/>} about={"Save hours of research"}/>
-                        <Benefit icon={<Wrench/>} about={"Works for big jobs or small touch-ups"}/>
+                        <Benefit icon={<CheckCircle size={"2rem"} strokeWidth={"1px"}/>} about={"No Cost, No Obligation"}/>
+                        <Benefit icon={<Volume2 size={"2rem"} strokeWidth={"1px"}/>} about={"No Spam Calls or Selling Your Info"}/>
+                        <Benefit icon={<Shield size={"2rem"} strokeWidth={"1px"}/>} about={"Vetted, licensed, and insured painters"}/>
+                        <Benefit icon={<Search size={"2rem"} strokeWidth={"1px"}/>} about={"Save hours of research"}/>
+                        <Benefit icon={<Wrench size={"2rem"} strokeWidth={"1px"}/>} about={"Works for big jobs or small touch-ups"}/>
                     </div>
 
                 </div>

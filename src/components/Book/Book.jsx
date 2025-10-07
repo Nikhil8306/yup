@@ -20,9 +20,9 @@ function Book () {
             </Description>
 
             <div className={styles.steps}>
-                <InfoCard count={"One"} heading={"Tell Us About Your Project"} desc={"Just Answer a few quick questions. No sales calls. No spam."} img={one}/>
-                <InfoCard count={"Two"} heading={"Find a Painter"} desc={"We'll match you with 3 licensed, verified, available pros in your area."} img={two}/>
-                <InfoCard count={"Three"} heading={"Book with Confidence"} desc={"Schedule estimates, read reviews, pick the pro that fits your job best."} img={three}/>
+                <InfoCard className={styles.infocard} count={"One"} heading={"Tell Us About Your Project"} desc={"Just Answer a few quick questions. No sales calls. No spam."} img={one}/>
+                <InfoCard className={styles.infocard} count={"Two"} heading={"Find a Painter"} desc={"We'll match you with 3 licensed, verified, available pros in your area."} img={two}/>
+                <InfoCard className={styles.infocard} count={"Three"} heading={"Book with Confidence"} desc={"Schedule estimates, read reviews, pick the pro that fits your job best."} img={three}/>
             </div>
 
             <br />

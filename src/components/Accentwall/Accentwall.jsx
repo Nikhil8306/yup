@@ -1,15 +1,18 @@
 import "./Accentwall.css";
 
 import Button from "../UI/Button/Button";
+import Heading from "../Heading.jsx";
+import Description from "../Description.jsx";
 
 function AccentWall({title, subtitle, description, onClick, images}){
   return (
     <section className="aw">
       <div className="aw__inner">
         <div className="aw__copy">
-          <h2 className="aw__title">{title}</h2>
-          <p className="aw__subtitle">{subtitle}</p>
-          <p className="aw__desc">{description}</p>
+          <Heading className="aw__title">{title}</Heading>
+          <p className="aw__subtitle">{subtitle}</p> <br />
+          <Description className="aw__desc">{description}</Description>
+          <br /><br />
           <Button backgroundColor={"var(--c2)"} type="button" onClick={onClick}>
             Hire a Pro
           </Button>
@@ -33,6 +36,5 @@ function AccentWall({title, subtitle, description, onClick, images}){
     </section>
   )
 }
-
 
 export default AccentWall;

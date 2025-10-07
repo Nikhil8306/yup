@@ -1,8 +1,8 @@
 import { BookmarkIcon } from "lucide-react";
 
-function InfoCard({count, heading, desc, img, background}) {
+function InfoCard({count, heading, desc, img, background, className}) {
     return <>
-        <div className={styles.container} style={{backgroundColor:background}}>
+        <div className={`${className} ${styles.container}`} style={{backgroundColor:background}}>
             <div className={styles.content}>
                 <div className={styles.count}><BookmarkIcon style={{marginRight: "0.5rem"}}/> {count}</div>
                 <div className={styles.innercontent}>

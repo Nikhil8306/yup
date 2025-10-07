@@ -1,56 +1,130 @@
 .container {
-    display: flex;
-    padding: 0 9.2rem;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-top: 10rem;
-    
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 10rem;
+  padding: 0 9.2rem;
 }
 
 .innercontainer {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
-
 .image {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image > img {
-    width: 85%;
-    height: 85%;
-    object-fit: cover;
-    background-color: var(--c1);
-    border-radius: 2rem;
+  width: 85%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2rem;
+  background-color: var(--c1);
 }
 
 .content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 .benefits {
-    margin-top: 5rem;
-    padding-left: 1rem;
-    height: 50%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  margin-top: 5rem;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1.2rem 1rem;
 }
 
 .benefit {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
 }
 
 .btn {
+  margin-top: 4rem;
+}
+
+/* --- RESPONSIVE SECTION --- */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 3rem;
+    margin-top: 6rem;
+  }
+
+  .innercontainer {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image > img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+  }
+
+  .benefits {
+    margin-top: 3rem;
+    padding-left: 0;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .benefit {
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1.5rem;
     margin-top: 4rem;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .benefit {
+    justify-content: flex-start;
+  }
+
+  .benefits {
+    text-align: left;
+    gap: 0.8rem;
+  }
+
+  .image > img {
+    width: 100%;
+  }
 }
