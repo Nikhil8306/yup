@@ -107,10 +107,7 @@
    padding: 5rem 3rem;
  }
 
- /* Hide the image in the FIRST row only */
- .rs-painters-row:first-of-type .rs-painters-colImage {
-   display: none;
- }
+
 
  /* Make text column full width when image is hidden */
  .rs-painters-row:first-of-type .rs-painters-colText {

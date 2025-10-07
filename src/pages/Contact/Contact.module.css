@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding: 0 9.2rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+}
+
+.contact {
+    font-size: 1.1rem;
+    color: var(--c9);
+}
+
+.title {
+    font-weight: 500;
+}

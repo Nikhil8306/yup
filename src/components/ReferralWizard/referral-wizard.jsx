@@ -300,7 +300,7 @@ export default function ReferralWizard() {
                 />
                 <RswSelect
                   id="propertyType"
-                  label="Residential or Commercial"
+                //   label="Residential or Commercial"
                   placeholder="Residential or Commercial"
                   value={data.propertyType}
                   onChange={(v) => update("propertyType", v)}
@@ -314,7 +314,7 @@ export default function ReferralWizard() {
               <div className={styles["rsw-row"]}>
                 <RswSelect
                   id="paintScope"
-                  label="What do you want painted?"
+                //   label="What do you want painted?"
                   placeholder="What do you want painted?"
                   value={data.paintScope}
                   onChange={(v) => update("paintScope", v)}
@@ -338,7 +338,7 @@ export default function ReferralWizard() {
               <div className={styles["rsw-rowSingle"]}>
                 <RswSelect
                   id="colorsSelected"
-                  label="Do you have paint colors selected?"
+                //   label="Do you have paint colors selected?"
                   placeholder="Do you have paint colors selected?"
                   value={data.colorsSelected}
                   onChange={(v) => update("colorsSelected", v)}
@@ -367,14 +367,11 @@ export default function ReferralWizard() {
                 <input
                   className={styles["rsw-input"]}
                   type="date"
-                  placeholder="Date of project"
                   value={data.date}
                   onChange={(e) => update("date", e.target.value)}
                 />
                 <RswSelect
                   id="contactMethod"
-                  label="Best way to reach you"
-                  placeholder="Best way to reach you"
                   value={data.contactMethod}
                   onChange={(v) => update("contactMethod", v)}
                   options={[
@@ -388,8 +385,6 @@ export default function ReferralWizard() {
               <div className={styles["rsw-rowSingle"]}>
                 <RswSelect
                   id="budget"
-                  label="Budget range"
-                  placeholder="Budget range"
                   value={data.budget}
                   onChange={(v) => update("budget", v)}
                   options={[
@@ -406,7 +401,7 @@ export default function ReferralWizard() {
                 <textarea
                   className={styles["rsw-textarea"]}
                   rows={4}
-                  placeholder="Any additional details or special instructions?"
+                //   placeholder="Any additional details or special instructions?"
                   value={data.notes}
                   onChange={(e) => update("notes", e.target.value)}
                 />

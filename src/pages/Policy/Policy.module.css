@@ -1,0 +1,64 @@
+/* new CSS Module with component-scoped class names prefixed with pp- to avoid collisions */
+.pp-container {
+  /* Align left with comfortable margins, responsive max width */
+  /* max-width: 920px; */
+  /* margin-left: clamp(16px, 6vw, 80px); */
+  padding-bottom: 40px;
+  color: var(--color-foreground);
+  /* font-family: var(--font-sans); */
+  padding: 0 9.2rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.pp-header {
+  margin-bottom: 12px;
+}
+
+.pp-title {
+  /* Large, clean heading similar to screenshot */
+  font-size: clamp(32px, 4vw, 36px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px 0;
+  color: var(--color-foreground);
+}
+
+.pp-updated {
+     font-size: 1.2rem;
+     color: var(--c9);
+     font-weight: 500;
+     margin-top: 2rem;
+     margin-bottom: 2.2rem;
+}
+
+.pp-section {
+  margin-top: 20px;
+    color: var(--c4);
+}
+
+.pp-section-title {
+  /* Slightly larger than body, bold, left-aligned */
+  font-size:1.2rem;
+  font-weight: 600;
+  margin: 20px 0 8px 0;
+}
+
+.pp-body {
+  /* Muted paragraph text to match screenshot tone */
+  font-size: 1.2rem;
+  margin: 12px 0;
+}
+
+.pp-strong {
+  font-weight: 600;
+}
+
+/* Basic responsiveness (container already scales via clamp) */
+@media (min-width: 1024px) {
+  .pp-container {
+    margin-left: 96px; /* gives that generous left gutter feel on large screens */
+    margin-right: auto;
+  }
+}
