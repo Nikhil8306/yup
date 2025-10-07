@@ -1,0 +1,13 @@
+.link {
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.openlink {
+    color: #3695BA;
+}

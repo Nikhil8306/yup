@@ -1,0 +1,49 @@
+.container {
+    height: 34rem;
+    margin: 0 9.2rem;
+    background: transparent linear-gradient(180deg, #26BCB4 0%, #3695BA 49%, #4848B7 100%) 0% 0% no-repeat padding-box;
+    border-radius: 1.5rem;
+    margin-top: 10rem;
+
+    display: flex;
+    color: white;
+
+}
+
+
+.content {
+    flex: 1;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heading {
+    font-size: 3.9rem;
+}
+
+.desc {
+    font-size: 1.45rem;
+}
+
+.image {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.image > img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    gap: 10rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+

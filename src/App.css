@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat';
+}
+
+:root {
+    
+    --c1: #F5F7FE;
+    --c2: #3695BA;
+    --c3: #000024;
+    --c4: #565656;
+    --c5: #707070;
+    --c6: #050606;
+    --c7: #26BCB4;
+    --c8: #4848B7;
+    --c9: #10141D;
+    --c10: #FF9900;
+    --c11: #00000041;
+
+}
+
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 14px;
+    }
+}

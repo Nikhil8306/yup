@@ -1,0 +1,47 @@
+.container {
+    height: 15rem;
+    min-width: 21rem;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1rem;
+    background-color: var(--c1);
+    padding: 2.2rem;
+
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+.logo {
+    width: 4rem;
+    height: 4rem;
+    color: var(--c2);
+    transition: color 0.2s;
+}
+.heading {
+    margin-top: 3rem;
+    font-size: 1.45rem;
+}
+
+.avail {
+
+    display: flex;
+    align-items: center;
+    color: var(--c4);
+    font-size: 1rem;
+
+}
+@media (hover: hover) {   
+    .container:hover {
+        transform: translateY(-0.6rem);
+        transition: transform 0.2s, background-color 0.2s, color 0.2s;
+        background-color: var(--c2);
+        color: white;
+    }
+    .container:hover .logo, .container:hover .avail {
+        color: white;
+        transition: color 0.2s;
+    }
+
+
+}

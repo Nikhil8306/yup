@@ -1,0 +1,224 @@
+/* namespaced styles for Referral Wizard (rsw- prefix) to avoid collisions */
+
+/* Layout container */
+.rsw-container {
+
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2, 8, 23, 0.08);
+    overflow: hidden;
+    padding: 0 9.2rem;
+    padding-bottom: 2rem;
+    background-color: var(--c1);
+    border-radius: 1rem;
+    padding-top: 4rem;    
+
+}
+
+/* Two-column grid */
+/* .rsw-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 960px) {
+  .rsw-grid {
+    grid-template-columns: 1.05fr 1.25fr;
+  }
+} */
+
+.rsw-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 960px) {
+  .rsw-grid {
+    grid-template-columns: 1.05fr 1.25fr;
+  }
+}
+
+/* Left image */
+.rsw-left {
+  background: white;
+}
+.rsw-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right side content */
+.rsw-right {
+    background-color: white;
+  padding: 28px 20px 28px;
+}
+@media (min-width: 640px) {
+  .rsw-right {
+    padding: 40px 42px 44px;
+  }
+}
+
+.rsw-step {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #64748b; /* slate-500 */
+}
+
+.rsw-title {
+  margin: 0 0 10px 0;
+  font-size: clamp(22px, 3.4vw, 34px);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0b1220;
+}
+
+.rsw-lead {
+  margin: 0 0 22px 0;
+  color: #475569; /* slate-600 */
+  line-height: 1.6;
+}
+
+/* Fields grid */
+.rsw-fields {
+  display: grid;
+  gap: 14px;
+}
+
+.rsw-row {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 720px) {
+  .rsw-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.rsw-rowSingle {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Inputs */
+.rsw-input,
+.rsw-textarea,
+.rsw-select__button {
+  width: 100%;
+  border: 1.5px solid #cbd5e1; /* slate-300 */
+  border-radius: 10px;
+  padding: 14px 14px;
+  font-size: 15px;
+  color: #0f172a;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.rsw-input::placeholder,
+.rsw-textarea::placeholder {
+  color: #94a3b8; /* slate-400 */
+}
+
+.rsw-input:focus,
+.rsw-textarea:focus,
+.rsw-select__button:focus {
+  border-color: #2fa7b2;
+  box-shadow: 0 0 0 4px rgba(47, 167, 178, 0.15);
+}
+
+.rsw-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Actions */
+.rsw-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+.rsw-secondary {
+  appearance: none;
+  border: 1.5px solid #cbd5e1;
+  color: #0f172a;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+.rsw-secondary:hover {
+  background: #f8fafc;
+}
+
+/* Select (custom dropdown) */
+.rsw-select {
+  position: relative;
+}
+
+.rsw-select__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+}
+
+.rsw-select__placeholder {
+  color: #94a3b8;
+}
+
+.rsw-select__value {
+  color: #0f172a;
+}
+
+.rsw-select__icon {
+  width: 18px;
+  height: 18px;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.rsw-select__list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow: auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.08);
+  padding: 6px;
+  z-index: 20;
+}
+
+.rsw-select__option,
+.rsw-select__option--active {
+  list-style: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #0f172a;
+}
+.rsw-select__option:hover {
+  background: #f1f5f9;
+}
+.rsw-select__option--active {
+  background: #e2f3f5; /* subtle active */
+}
+
+/* Utility for screen-reader-only labels */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+}

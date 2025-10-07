@@ -1,0 +1,19 @@
+.container {
+    height: 3rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.1rem;
+
+    transition: opacity 0.2s;
+    border: none;
+}
+
+.container:hover {
+    opacity: 70%;
+    transition: opacity 0.2s;
+}

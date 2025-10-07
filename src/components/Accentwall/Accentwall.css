@@ -1,0 +1,153 @@
+/* New responsive accent wall component styles (raw CSS) */
+.aw {
+  --aw-bg: #ffffff;
+  --aw-text: #0a1630; /* deep navy for headings */
+  --aw-muted: #4b5563; /* neutral gray for body */
+  --aw-primary: #2a6fd6; /* blue button and focus */
+  --aw-ring: rgba(42, 111, 214, 0.35);
+
+  background: var(--aw-bg);
+  color: var(--aw-text);
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+.aw__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/* Copy column */
+.aw__copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.aw__title {
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.aw__subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  margin: 0.25rem 0 0.25rem;
+  color: var(--aw-text);
+}
+
+.aw__desc {
+  margin: 0.25rem 0 0.75rem;
+  color: var(--aw-muted);
+  line-height: 1.6;
+  font-size: clamp(0.95rem, 1.2vw, 1.0625rem);
+  max-width: 46ch;
+}
+
+.aw__cta {
+  width: fit-content;
+  padding: 0.85rem 1.25rem;
+  background: var(--aw-primary);
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 6px 18px rgba(42, 111, 214, 0.25);
+}
+.aw__cta:hover {
+  transform: translateY(-1px);
+}
+.aw__cta:active {
+  transform: translateY(0);
+}
+.aw__cta:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--aw-ring);
+}
+
+/* Gallery */
+.aw__gallery {
+  display: grid;
+  gap: 16px;
+}
+
+/* Image card base */
+.aw__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #f5f7fb;
+  box-shadow: 0 8px 28px rgba(10, 22, 48, 0.08);
+  isolation: isolate;
+}
+.aw__card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Mobile-first gallery layout */
+.aw__gallery {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 140px;
+}
+.aw__card--tall {
+  grid-column: 1 / -1;
+  grid-row: span 2;
+  min-height: 280px;
+}
+.aw__card--wide {
+  grid-column: 1 / -1;
+  grid-row: span 1;
+}
+.aw__card--small1 {
+  grid-column: 1;
+}
+.aw__card--small2 {
+  grid-column: 2;
+}
+
+/* Two-column page layout at md+ */
+@media (min-width: 880px) {
+  .aw__inner {
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+  }
+  /* Desktop gallery: 3-column collage
+     | tall |   wide wide |
+     | tall |   wide wide |
+     | tall | small1 small2 | */
+  .aw__gallery {
+    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-auto-rows: 160px;
+  }
+  .aw__card--tall {
+    grid-column: 1;
+    grid-row: span 3;
+    min-height: 100%;
+  }
+  .aw__card--wide {
+    grid-column: 2 / 4;
+    grid-row: span 2;
+  }
+  .aw__card--small1 {
+    grid-column: 2;
+    grid-row: span 1;
+  }
+  .aw__card--small2 {
+    grid-column: 3;
+    grid-row: span 1;
+  }
+}
+
+/* Larger screens: increase image height */
+@media (min-width: 1140px) {
+  .aw__gallery {
+    grid-auto-rows: 200px;
+  }
+}

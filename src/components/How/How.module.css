@@ -1,0 +1,26 @@
+.container {
+    background-color: var(--c1);
+    display: flex;
+
+}
+
+.image {
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+}
+.image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.steps {
+    height: 17rem;
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+    /* border: solid black 2px; */
+}
