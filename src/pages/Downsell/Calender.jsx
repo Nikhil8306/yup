@@ -46,7 +46,7 @@ function buildCalendarGrid(monthDate) {
   return Array.from({ length: 42 }, (_, i) => addDays(gridStart, i))
 }
 
-export default function BookingScheduler({selectedDate, setSelectedDate, selectedTime, setSelectedTime, onSubmit}) {
+export default function BookingScheduler({selectedDate, setSelectedDate, selectedTime, setSelectedTime, next}) {
   const [viewMonth, setViewMonth] = useState(new Date(2025, 8, 1))
   const today = useMemo(() => {
     const d = new Date()
@@ -245,7 +245,7 @@ export default function BookingScheduler({selectedDate, setSelectedDate, selecte
                 <li className={styles["rs-scheduler__time-item--submit"]}>
                   <button
                     className={styles["rs-scheduler__submit"]}
-                    onClick={onSubmit}
+                    onClick={next}
                     aria-disabled={!selectedDate || !selectedTime || undefined}
                   >
                     SUBMIT
@@ -256,7 +256,7 @@ export default function BookingScheduler({selectedDate, setSelectedDate, selecte
           </div>
 
           <div className={styles["rs-scheduler__cta-row"]}>
-            <button className={styles["rs-scheduler__cta"]} onClick={onSubmit}>
+            <button className={styles["rs-scheduler__cta"]} onClick={next}>
               Go to Step 2
             </button>
           </div>

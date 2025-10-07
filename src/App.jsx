@@ -22,6 +22,7 @@ import Areas from "./pages/Areas/Areas.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Policy from "./pages/Policy/Policy.jsx";
 import Downsell from "./pages/Downsell/Downsell.jsx";
+import Confirmation from "./pages/Confirmation/Confirmation.jsx";
 
 // pro page
 
@@ -70,6 +71,8 @@ function App() {
                     <Route path="/tnc" element={<Policy data={termCondition}/>}></Route>
 
                     <Route path="/downsell" element={<Downsell/>}></Route>
+
+                    <Route path="/confirmation" element={<Confirmation/>}></Route>
 
                 </Route>
 

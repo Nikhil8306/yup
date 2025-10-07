@@ -11,6 +11,7 @@
   min-height: 100dvh;
   padding: 20px 18px 28px;
   color: var(--rs-text);
+  padding-top: 5rem;
 }
 
 .rs-scheduler__container {

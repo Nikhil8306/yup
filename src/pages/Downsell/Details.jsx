@@ -2,16 +2,14 @@ import styles from "./Details.module.css";
 import Button from "../../components/UI/Button/Button";
 import act from "../../assets/act.png";
 
-function Details({ data, setData, prev, onSubmit }) {
+function Details({ data, setData, prev, next }) {
   const update = (key, value) => {
     setData((prev) => ({ ...prev, [key]: value }));
   };
 
-  const next = () => {
-    console.log("Next step data:", data);
-  };
 
   return (
+    <>
     <section className={styles["rsw-container"]} aria-label="Referral wizard">
       <div className={styles["rsw-grid"]}>
         <div className={styles["rsw-left"]}>
@@ -23,7 +21,7 @@ function Details({ data, setData, prev, onSubmit }) {
         </div>
 
         <div className={styles["rsw-right"]}>
-          <p className={styles["rsw-step"]}>Step 2 of 3</p>
+          <p className={styles["rsw-step"]}>Step 2 of 2</p>
 
           <h2 className={styles["rsw-heading"]}>
             You’re almost there...
@@ -104,7 +102,9 @@ function Details({ data, setData, prev, onSubmit }) {
           </div>
         </div>
       </div>
+    <div style={{height: "11rem"}}></div>
     </section>
+    </>
   );
 }
 
