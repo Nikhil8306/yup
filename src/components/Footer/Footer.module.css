@@ -104,6 +104,10 @@ footer {
     .container  {
         padding: 0 5rem;
     }
+
+    .f3 > .heading{ 
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -118,6 +122,7 @@ footer {
     }
     .f1, .f2, .f3 {
         align-items: center;
+        margin-top: 1rem;
     }
 
     .f2 {
@@ -127,4 +132,5 @@ footer {
     .f3 {
         font-size: 1rem;
     }
+
 }

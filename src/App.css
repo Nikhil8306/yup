@@ -19,6 +19,7 @@
     --c9: #10141D;
     --c10: #FF9900;
     --c11: #00000041;
+    --c12: #4279bf;
 
 }
 
@@ -44,17 +45,5 @@
 @media (max-width: 800px) {
     html {
         font-size: 10px;
-    }
-}
-
-@media (max-width: 500px) {
-    html {
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 400) {
-    html {
-        font-size : 7px
     }
 }

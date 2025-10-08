@@ -37,26 +37,156 @@
   height: 100px;
   width: 930px;
   z-index: 1;
+  overflow: visible;
 }
 
 .painter {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  min-width: 700px;
-
+  display: none;
 }
 
 .painterimg {
   object-fit: contain;
-  /* height: 100%; */
   width: 100%;
 }
 
-/* Mobile */
+@media (min-width: 901px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .content {
+    flex: 1;
+  }
+
+  .content .painter {
+    display: none;
+  }
+
+  .container::after {
+    content: '';
+    flex: 1;
+    min-width: 700px;
+    background-image: url('../../../assets/homepainter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 4rem;
+  }
+
+  .find {
+    width: 600px;
+  }
+
+}
 @media (max-width: 900px) {
-    .container  {
+  .container {
+    height: auto;
+    padding: 0px 2rem;
+    padding-bottom: 4rem;
+  }
+  .content {
+    margin-top: 4rem;
+    gap: 1.5rem;
+  }
+  .head {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+  .painter {
+    display: block;
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+  .painterimg {
+    width: 100%;
+    height: auto;
+  }
+  .find {
+    width: 100%;
+    height: auto;
+    margin-top: -3rem;
+    z-index: 2;
+  }
+  .end {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
 
-    }
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .content {
+    margin-top: 3rem;
+    gap: 1.2rem;
+  }
+
+
+   .head {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .painter {
+    /* margin: 1.5rem 0 0 0; */
+    /* border: solid black 2px; */
+  }
+
+  .find {
+    height: auto;
+    min-height: 80px;
+    margin-top: -2.5rem;
+  }
+
+  .end {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0px 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .content {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .head {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .painter {
+    /* margin: 1rem 0 0 0; */
+    transform: translate(-20px, 1rem);
+  }
+
+  .find {
+    min-height: 70px;
+    margin-top: -2rem;
+  }
+
+  .end {
+    font-size: 1rem;
+  }
 }

@@ -25,9 +25,8 @@ import Downsell from "./pages/Downsell/Downsell.jsx";
 import Confirmation from "./pages/Confirmation/Confirmation.jsx";
 
 // pro page
-
-
-
+import Pro from "./pages/Pro/Pro.jsx";
+import Landing from "./pages/Pro/Landing/Landing.jsx";
 
 
 // data 
@@ -76,7 +75,8 @@ function App() {
 
                 </Route>
 
-                <Route path="/pro">
+                <Route path="/pro" element={<Pro/>}>
+                    <Route path="/pro" element={<Landing/>}></Route>
                     <Route path="/pro/privacy" element={<Policy data={proPrivacyPolicy}/>}> </Route>
                 </Route>
 

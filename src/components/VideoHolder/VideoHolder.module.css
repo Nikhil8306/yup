@@ -1,0 +1,154 @@
+/* Scoped CSS Module for the hero. Class names are prefixed with rs-hero to avoid collisions. */
+
+.rs-hero {
+  /* Local design tokens for this component */
+  --rs-text: #222222;
+  --rs-muted: #5e5e5e;
+  --rs-border: #bdbdbd;
+  --rs-blue: #2aa2df;
+  --rs-video-bg: #232323;
+
+  color: var(--rs-text);
+  padding: clamp(24px, 5vw, 56px) 16px;
+}
+
+.rs-hero__grid {
+  margin: 0 auto;
+  /* max-width: 1120px; */
+  padding: 0 9.2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(20px, 4vw, 48px);
+}
+
+@media (min-width: 960px) {
+  .rs-hero__grid {
+    grid-template-columns: 1.05fr 1fr; /* slightly wider media block to match reference */
+    align-items: center;
+  }
+}
+
+/* Left: Video placeholder */
+.rs-hero__video {
+  background: var(--rs-video-bg);
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* subtle ring and play cue */
+.rs-hero__video::before {
+  content: "";
+  position: absolute;
+  width: 56%;
+  height: 56%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.06) inset;
+  outline: 10px solid rgba(255, 255, 255, 0.06);
+  outline-offset: -10px;
+}
+
+.rs-hero__video::after {
+  content: "";
+  position: absolute;
+  /* play triangle */
+  width: 0;
+  height: 0;
+  border-left: 28px solid rgba(255, 255, 255, 0.12);
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  transform: translateX(4px);
+}
+
+.rs-hero__video-label {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(14px, 1.1vw + 10px, 22px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Right: Content */
+.rs-hero__content {
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+@media (min-width: 960px) {
+  .rs-hero__content {
+    margin-inline: 0;
+  }
+}
+
+.rs-hero__title {
+  font-weight: 500;
+  line-height: 1.15;
+  font-size: clamp(28px, 2.6vw + 12px, 44px);
+  margin: 0 0 16px 0;
+  letter-spacing: 0.01em;
+}
+
+.rs-hero__lead {
+  margin: 0 0 24px 0;
+  color: var(--rs-muted);
+  font-size: clamp(14px, 0.5vw + 12px, 17px);
+  line-height: 1.6;
+}
+
+/* Benefits box */
+.rs-hero__benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--rs-border);
+  border-radius: 2px;
+  padding: 18px 20px;
+  gap: 18px;
+  max-width: 560px;
+}
+
+@media (min-width: 640px) {
+  .rs-hero__benefits {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+  }
+}
+
+.rs-hero__benefit {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .rs-hero__benefit:nth-child(1) {
+    border-right: 1px solid var(--rs-border);
+    padding-right: 20px;
+  }
+  .rs-hero__benefit:nth-child(2) {
+    padding-left: 20px;
+  }
+}
+
+.rs-hero__icon {
+  width: 40px;
+  height: 40px;
+  background: var(--rs-blue);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.rs-hero__benefit-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--rs-text);
+}

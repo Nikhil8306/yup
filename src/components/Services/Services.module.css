@@ -30,9 +30,15 @@
     margin-top: 2.5rem;
 }
 
+@media (max-width: 1500) {
+    .container {
+        padding : 0 4rem;
+    }
+}
+
 @media (max-width: 900px) {
     .container  {
-        padding: 0 5rem;
+        padding: 0 3rem;
     }
 }
 

@@ -1,0 +1,9 @@
+.info {
+    width: 100%;
+    padding: 0 9.2rem;
+
+    display: flex;
+    background-color: var(--c3);
+    height: 50rem;
+}
+

@@ -1,4 +1,5 @@
 import painter from "../../../assets/homepainter.png";
+import styles from "./Home.module.css";
 
 import Memberbanner from "../../../components/Memberbanner/Memberbanner";
 import SearchBar from "../../../components/Searchbar/Searchbar";
@@ -19,29 +20,25 @@ function Home() {
                     Answer a few quick questions and get matched with up to 3 top-rated pros in your area — no spam, no pressure.
                 </div>
 
-                <div className={styles.find}>
+                <div className={styles.painter}>
+                    <img src={painter} alt="Painter" className={styles.painterimg}/>
+                </div>
 
+                <div className={styles.find}>
                     <SearchBar></SearchBar>
-                    
                 </div>
                 
-
                 <div className={styles.end}>
                     The Marketplace to Connect with Pros
                 </div>
 
             </div>
 
-            <div className={styles.painter}>
-                <img src={painter} alt="Painter" className={styles.painterimg}/>
-            </div>
-
         </div>
-
 
         <Memberbanner/>
         <Services heading={"What Do You Want Painted?"}/>
-        <Match/>
+        <Match className={styles.match}/>
         <Book/>
         <Referralsource/>
         <Testimonials/> 
@@ -51,5 +48,3 @@ function Home() {
 }
 
 export default Home;
-
-import styles from "./Home.module.css";

@@ -32,6 +32,7 @@ function Footer() {
                         SPONSORED. Sherwin-Williams is in no way associated with or responsible for services obtained from Referral Source. <br /> <br /> *Sherwin-Williams is in no way associated with or responsible for services obtained from Digital Alliance Members.
                     </div>
                 </div>
+
                 <div className={styles.f2}>
                     <Link color="white">Home</Link>
                     <Link color="white">Find Painters</Link>
@@ -39,7 +40,7 @@ function Footer() {
                 </div>
                 <div className={styles.f3}>
 
-                    <Heading>Get special offers from Referral Source</Heading>
+                    <Heading className={styles.heading}>Get special offers from Referral Source</Heading>
                     <div className={styles.input}>
                         <input type="text" placeholder="Enter you Email"/>
                         <button><ArrowBigRightIcon color="white"/></button>

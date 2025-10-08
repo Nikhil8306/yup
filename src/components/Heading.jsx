@@ -1,17 +1,15 @@
-function Heading({children, className}) {
+function Heading({children, className, fontSize}) {
     return<>
 
         <div
-            style={{
-                fontSize: "2.7rem",
-            }}
-
-            className={className}
+            className={`${className} ${styles.container}`}
         >
             {children}
         </div>
     
     </>
 }
+
+import styles from "./Heading.module.css";
 
 export default Heading;

@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 9.2rem;
-  background-color: var(--c1);
+  background-color: var(--c3);
   position: relative;
 }
 
@@ -40,7 +40,7 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  z-index: 2001;
+  z-index: 1001;
 }
 
 .hamburger span {
@@ -63,39 +63,17 @@
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Mobile Login Button */
-.mobile-login {
-  display: none;
-}
-
 /* Mobile - Trigger at 1500px */
 @media (max-width: 1500px) {
-  .container {
-    justify-content: space-between;
-  }
 
   .hamburger {
     display: flex;
-    order: 1;
-  }
-
-  .logo {
-    order: 2;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .mobile-login {
-    display: block;
-    order: 3;
-    z-index: 1001;
   }
 
   .navigations {
     position: fixed;
     top: 0;
-    left: -100%;
+    right: -100%;
     width: 70%;
     max-width: 400px;
     height: 100vh;
@@ -105,17 +83,19 @@
     align-items: flex-start;
     padding: 8rem 2rem 2rem 2rem;
     gap: 2rem;
-    transition: left 0.3s ease;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 2000;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
   .navigations-open {
-    left: 0;
+    right: 0;
   }
 
   .login {
-    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
   }
 }
 

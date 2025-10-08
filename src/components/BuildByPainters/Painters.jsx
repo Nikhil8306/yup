@@ -1,14 +1,14 @@
 import "./features-section.css";
-
+import Heading from "../Heading";
 export default function FeaturesSection() {
   return (
     <section className="features-section-unique">
       <div className="features-container-unique">
         {/* Header */}
         <div className="features-header-unique">
-          <h2 className="features-title-unique">
+          <Heading>
             Built by Painters. For Painters.
-          </h2>
+          </Heading>
           <p className="features-subtitle-unique">
             Referral Source was built by painters, not marketers.
           </p>

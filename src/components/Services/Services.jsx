@@ -1,5 +1,5 @@
 import { BedDoubleIcon, HomeIcon, FenceIcon, CookingPotIcon, SchoolIcon, BrickWallIcon, DockIcon, CloudIcon , MoveRight } from "lucide-react";
-
+import Link from "../UI/Link/Link.jsx";
 import Servicecard from "../../components/Servicecard/Servicecard.jsx";
 
 function Services ({heading}) {
@@ -7,9 +7,9 @@ function Services ({heading}) {
         <div className={styles.container}>
             <div className={styles.heading}>
                 {heading}
-                <div className={styles.explore}>
+                <Link color="var(--c2)" className={styles.explore}>
                     Explore all <MoveRight style={{marginLeft: "1rem"}}/>
-                </div>
+                </Link>
             </div>
 
             <div className={styles.content}>

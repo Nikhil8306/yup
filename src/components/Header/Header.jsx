@@ -15,10 +15,6 @@ function Header() {
   return (
     <>
       <div className={`${styles['container']}`}>
-        <div className={`${styles['logo']}`}>
-          <img src={logo} alt="Referral Source" className={`${styles['logoimg']}`} />
-        </div>
-
         {/* Hamburger Icon */}
         <button 
           className={`${styles['hamburger']} ${isMenuOpen ? styles['hamburger-open'] : ''}`}
@@ -29,6 +25,17 @@ function Header() {
           <span></span>
           <span></span>
         </button>
+
+        <div className={`${styles['logo']}`}>
+          <img src={logo} alt="Referral Source" className={`${styles['logoimg']}`} />
+        </div>
+
+        {/* Mobile Login Button */}
+        <div className={`${styles['mobile-login']}`}>
+          <NavLink style={{textDecoration: "none"}} to={"/login"}>
+            <Button backgroundColor={"var(--c2)"}>Login</Button>
+          </NavLink>
+        </div>
 
         {/* Navigation */}
         <div className={`${styles['navigations']} ${isMenuOpen ? styles['navigations-open'] : ''}`}>
