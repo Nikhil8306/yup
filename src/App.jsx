@@ -32,6 +32,7 @@ import Landing from "./pages/Pro/Landing/Landing.jsx";
 import ProLogin from "./pages/Pro/login/login.jsx";
 import FmFlowSignupSuccess from "./pages/Pro/Success/Signupsuccess.jsx";
 import Matches from "./pages/Matches/Matches.jsx";
+import Help from "./pages/Pro/Help/Help.jsx";
 
 
 // data 
@@ -92,6 +93,10 @@ function App() {
                     <Route path="/pro/login" element={<ProLogin/>}></Route>
 
                     <Route path="/pro/success" element={<FmFlowSignupSuccess/>}></Route>
+                    
+                    <Route path="/pro/help" element={<Help/>}></Route>
+
+
                 </Route>
 
 

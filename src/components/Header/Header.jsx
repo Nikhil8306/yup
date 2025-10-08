@@ -41,6 +41,7 @@ function Header() {
       {/* Mobile Login Button */}
       <div className={styles["mobile-login"]}>
         <Button
+            to={"/login"}
           backgroundColor={"var(--c2)"}
           onClick={() => handleNavigate("/login")}
         >
@@ -59,8 +60,7 @@ function Header() {
           <Button to={"/pro"} backgroundColor={"black"}>I'm a Pro</Button>
           <Button
             backgroundColor={"var(--c2)"}
-            to={"/login"}
-          >
+            to={"/login"} >
             Login
           </Button>
         </div>

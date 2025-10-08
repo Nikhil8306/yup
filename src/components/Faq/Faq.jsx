@@ -1,5 +1,6 @@
 import React from "react";
 import "./Faq.css"; // local css just for this component
+import Heading from "../Heading";
 
 const FAQ_DATA = [
   {
@@ -42,7 +43,7 @@ export default function RsFaq() {
 
   return (
     <section className="rsFaq" aria-label="Frequently Asked Questions">
-      <h2 className="rsFaqTitle">Frequently Asked Questions</h2>
+      <Heading >Frequently Asked Questions</Heading>
 
       <div className="rsFaqBox">
         <ul className="rsFaqList">

@@ -23,7 +23,7 @@
 }
 
 .rsFaqBox {
-  border: 2px solid var(--accent);
+  /* border: 2px solid var(--accent); */
   border-radius: 6px;
   padding: clamp(1rem, 3.5vw, 2rem);
   background: #fff;
@@ -70,7 +70,7 @@
 
 .rsFaqAnswer {
   margin-top: 0.25rem;
-  max-width: 58ch;
+  /* max-width: 58ch; */
   color: var(--muted);
   font-size: clamp(0.95rem, 1.8vw, 1rem);
   line-height: 1.6;

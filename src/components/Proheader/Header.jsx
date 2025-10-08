@@ -35,7 +35,10 @@ function Header() {
         </button>
 
         <div className={`${styles['logo']}`}>
+            <NavLink to={"/pro"}>
+
           <img src={logo} alt="Referral Source" className={`${styles['logoimg']}`} />
+            </NavLink>
         </div>
 
         {/* Mobile Login Button */}
@@ -45,11 +48,10 @@ function Header() {
 
         {/* Navigation */}
         <div className={`${styles['navigations']} ${isMenuOpen ? styles['navigations-open'] : ''}`}>
-             <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/how")}>How It Works</button>
-            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/services")}>Services</button>
-            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/about")}>About</button>
-            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/areas")}>Areas</button>
-          
+            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/how")}>How It Works</button>
+            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/help")}>Help</button>
+            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/apply")}>Apply</button>
+
           <div className={`${styles['login']}`}>
             <Button to={"/"} backgroundColor={"var(--c12)"}>I need a Pro</Button>
 
