@@ -24,7 +24,7 @@ function ServicesHome () {
         <Testimonials/>
         <div style={{height: "5rem"}}></div>
     </>
-}   
+}
 
 function Info() {
     return <>
