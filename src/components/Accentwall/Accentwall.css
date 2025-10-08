@@ -223,3 +223,10 @@
     min-height: 240px;
   }
 }
+
+.btn {
+    width: fit-content;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+}

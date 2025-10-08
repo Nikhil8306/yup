@@ -45,7 +45,7 @@ function RsHero() {
               Get Started
             </Button>
             <Button className="btn" backgroundColor={"var(--c12)"} type="button">
-              <span className="rshero-btn__icon" aria-hidden="true">
+              <span className="s" aria-hidden="true">
                 Learn How It Works <PlayCircleIcon style={{ marginLeft: "1rem" }} strokeWidth={"1px"} />
               </span>
             </Button>

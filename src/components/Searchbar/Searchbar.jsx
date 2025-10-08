@@ -1,5 +1,7 @@
 import Button from '../UI/Button/Button.jsx';
 import { SearchIcon, MapPinIcon } from 'lucide-react';
+
+import { useEffect, useRef, useState, useMemo } from 'react';
 function SearchBar() {
     return (
         <div className={`${styles['search-bar-container']}`}>
@@ -12,6 +14,7 @@ function SearchBar() {
             <option>Exterior Painting</option>
             <option>Cabinet Painting</option>
           </select>
+
         </div>
 
         <div className={`${styles['search-input-group']}`}>
@@ -28,6 +31,7 @@ function SearchBar() {
     </div>
   );
 }
+
 import styles from './Searchbar.module.css';
 
 export default SearchBar;

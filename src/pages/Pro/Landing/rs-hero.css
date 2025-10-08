@@ -26,6 +26,11 @@
   /* max-width: 1400px; */
 }
 
+.s {
+    display: flex;
+    align-items: center;
+}
+
 /* Layout: tablet */
 @media (min-width: 640px) {
   .rshero__inner {
@@ -305,4 +310,11 @@
   .rshero__image-front {
     width: 40%;
   }
+}
+
+.btn {
+    width: fit-content;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
 }

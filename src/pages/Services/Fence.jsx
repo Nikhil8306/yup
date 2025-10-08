@@ -41,10 +41,12 @@ let listItems = [
     
 ]
 
-let description = "Your fence and deck take a beating from the sun, rain, and everyday wear. A fresh coat of paint or stain not only restores their beauty but also extends their life - keeping your outdoor spaces safe, strong, and inviting.";
+let description = 
+"Your fence and deck take a beating from the sun, rain, and everyday wear. A fresh coat of paint or stain not only restores their beauty but also extends their life — keeping your outdoor spaces safe, strong, and inviting."
+
 function Fence() {
     return <>
-        <AccentWall title="Accent Wall Painting" subtitle="Make a Bold Statement in Any Room " description={description} images={[i1, i2, i3, i4]}/>
+        <AccentWall title="Fences & Decks" subtitle="Protect and Beautify Your Outdoors" description={description} images={[i1, i2, i3, i4]}/>
         <WhyRefine/>
         <Listing title={"What Our Pros Can Do"} items={listItems}></Listing>
         <Match/>
@@ -63,9 +65,9 @@ function WhyRefine() {
             <div className={styles.servicecontainer}>
 
                 <Servicecard icon={<ShieldIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Protection"} description={"Guard against moisture, UV damage and cracking"}/>
-                <Servicecard icon={<ShieldIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Curb Appeal"} description={"Guard against moisture, UV damage and cracking"}/>
-                <Servicecard icon={<ShieldIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Longevity"} description={"Guard against moisture, UV damage and cracking"}/>
-                <Servicecard icon={<ShieldIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Comfort"} description={"Guard against moisture, UV damage and cracking"}/>
+                <Servicecard icon={<HomeIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Curb Appeal"} description={"Guard against moisture, UV damage and cracking"}/>
+                <Servicecard icon={<TimerIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Longevity"} description={"Guard against moisture, UV damage and cracking"}/>
+                <Servicecard icon={<FenceIcon size={"3rem"} strokeWidth={"1px"}/>} heading={"Comfort"} description={"Guard against moisture, UV damage and cracking"}/>
             
             </div>
         </div>

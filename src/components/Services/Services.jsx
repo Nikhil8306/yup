@@ -7,20 +7,20 @@ function Services ({heading}) {
         <div className={styles.container}>
             <div className={styles.heading}>
                 {heading}
-                <Link color="var(--c2)" className={styles.explore}>
+                <Link to={"/services"} color="var(--c2)" className={styles.explore}>
                     Explore all <MoveRight style={{marginLeft: "1rem"}}/>
                 </Link>
             </div>
 
             <div className={styles.content}>
-                <Servicecard icon={<HomeIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Home Exterior"} avail={100}/>
-                <Servicecard icon={<BedDoubleIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Home Interior"} avail={100}/>
-                <Servicecard icon={<DockIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Kitchen Cabinets"} avail={100}/>
-                <Servicecard icon={<FenceIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Fences & Decks"} avail={100}/>
-                <Servicecard icon={<CloudIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Roof"} avail={100}/>
-                <Servicecard icon={<SchoolIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Commercial Exterior"} avail={100}/>
-                <Servicecard icon={<CookingPotIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Commercial Interior"} avail={100}/>
-                <Servicecard icon={<BrickWallIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Accent Wall"} avail={100}/>
+                <Servicecard to={"/services/exterior"} icon={<HomeIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Home Exterior"} avail={100}/>
+                <Servicecard to={"/services/interior"} icon={<BedDoubleIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Home Interior"} avail={100}/>
+                <Servicecard to={"/services/cabinate"} icon={<DockIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Kitchen Cabinets"} avail={100}/>
+                <Servicecard to={"/services/fence"} icon={<FenceIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Fences & Decks"} avail={100}/>
+                <Servicecard to={"/services/roof"} icon={<CloudIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Roof"} avail={100}/>
+                <Servicecard to={"/services/exterior"} icon={<SchoolIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Commercial Exterior"} avail={100}/>
+                <Servicecard to={"/services/interior"} icon={<CookingPotIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Commercial Interior"} avail={100}/>
+                <Servicecard to={"/services/accent"} icon={<BrickWallIcon size={"4rem"} strokeWidth={"1px"}/>} heading={"Accent Wall"} avail={100}/>
             </div>
         </div>
     </>

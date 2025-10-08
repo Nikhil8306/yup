@@ -44,11 +44,9 @@ function Header() {
           <Link color="white" to={"/about"}>About</Link>
           <Link color="white" to={"/areas"}>Areas</Link>
           <div className={`${styles['login']}`}>
-            <Button backgroundColor={"var(--c12)"}>I'm a Pro</Button>
+            <Button to={"/"} backgroundColor={"var(--c12)"}>I need a Pro</Button>
 
-            <NavLink style={{textDecoration: "none"}} to={"/login"}>
-                <Button backgroundColor={"var(--c2)"}>Login</Button>
-            </NavLink>
+            <Button backgroundColor={"var(--c2)"}>Login</Button>
           </div>
         </div>
       </div>

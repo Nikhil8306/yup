@@ -35,7 +35,7 @@ function Referralsource() {
                 </div>
             </div>
 
-            <Button className={styles.btn} backgroundColor={"var(--c2)"}>Try it Free</Button>
+            <Button to={"/login"} className={styles.btn} backgroundColor={"var(--c2)"}>Try it Free</Button>
         </div>
     </>
 }

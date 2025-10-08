@@ -2,6 +2,7 @@
     height: 15rem;
     min-width: 21rem;
     flex: 1;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@
 .heading {
     margin-top: 3rem;
     font-size: 1.45rem;
+    color: black;
 }
 
 .avail {
@@ -28,6 +30,7 @@
     display: flex;
     align-items: center;
     color: var(--c4);
+    color: black;
     font-size: 1rem;
 
 }
@@ -38,10 +41,11 @@
         background-color: var(--c2);
         color: white;
     }
-    .container:hover .logo, .container:hover .avail {
+    .container:hover .logo, .container:hover .avail, .container:hover .heading {
         color: white;
         transition: color 0.2s;
-    }
+    }   
+
 
 
 }

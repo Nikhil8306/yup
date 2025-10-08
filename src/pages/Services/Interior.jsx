@@ -36,10 +36,11 @@ let listItems = [
     
 ]
 
-let description = "Your fence and deck take a beating from the sun, rain, and everyday wear. A fresh coat of paint or stain not only restores their beauty but also extends their life - keeping your outdoor spaces safe, strong, and inviting.";
+let description = "Nothing transforms a space faster than a fresh coat of paint. Whether you’re brightening up your living room, adding personality to a bedroom, or giving your kitchen a modern update, our vetted interior painters handle every detail with skill and care."
+// let description = "Your fence and deck take a beating from the sun, rain, and everyday wear. A fresh coat of paint or stain not only restores their beauty but also extends their life - keeping your outdoor spaces safe, strong, and inviting.";
 function Interior() {
     return <>
-        <AccentWall title="Accent Wall Painting" subtitle="Make a Bold Statement in Any Room " description={description} images={[i1, i2, i3, i4]}/>
+        <AccentWall btn="Hire a Interior Painter" title="Interior Painting Services" subtitle="Refresh Your Home, Room by Room" description={description} images={[i1, i2, i3, i4]}/>
         <Listing title={"What Our Pros Can Help With"} items={listItems}></Listing>
         <Match/>
         <WhyReferral/>

@@ -27,6 +27,9 @@ import Confirmation from "./pages/Confirmation/Confirmation.jsx";
 // pro page
 import Pro from "./pages/Pro/Pro.jsx";
 import Landing from "./pages/Pro/Landing/Landing.jsx";
+import ProLogin from "./pages/Pro/login/login.jsx";
+import FmFlowSignupSuccess from "./pages/Pro/Success/Signupsuccess.jsx";
+import Matches from "./pages/Matches/Matches.jsx";
 
 
 // data 
@@ -73,12 +76,20 @@ function App() {
 
                     <Route path="/confirmation" element={<Confirmation/>}></Route>
 
+                    <Route path="/matches" element={<Matches/>}></Route>
+
                 </Route>
 
                 <Route path="/pro" element={<Pro/>}>
                     <Route path="/pro" element={<Landing/>}></Route>
+                    
                     <Route path="/pro/privacy" element={<Policy data={proPrivacyPolicy}/>}> </Route>
+
+                    <Route path="/pro/login" element={<ProLogin/>}></Route>
+
+                    <Route path="/pro/success" element={<FmFlowSignupSuccess/>}></Route>
                 </Route>
+
 
             </Routes>
         </BrowserRouter>
