@@ -4,12 +4,20 @@ import Link from "../UI/Link/Link.jsx";
 import Button from "../UI/Button/Button.jsx";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Central function to handle navigation and close menu
+  const handleNavigate = (path) => {
+    setIsMenuOpen(false);
+    navigate(path);
   };
 
   return (
@@ -32,21 +40,20 @@ function Header() {
 
         {/* Mobile Login Button */}
         <div className={`${styles['mobile-login']}`}>
-          <NavLink style={{textDecoration: "none"}} to={"/login"}>
-            <Button backgroundColor={"var(--c2)"}>Login</Button>
-          </NavLink>
+            <Button to={"/pro/login"} backgroundColor={"var(--c2)"}>Login</Button>
         </div>
 
         {/* Navigation */}
         <div className={`${styles['navigations']} ${isMenuOpen ? styles['navigations-open'] : ''}`}>
-          <Link color="white" to={"/how"}>How It Works</Link>
-          <Link color="white" to={"/services"}>Services</Link>
-          <Link color="white" to={"/about"}>About</Link>
-          <Link color="white" to={"/areas"}>Areas</Link>
+             <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/how")}>How It Works</button>
+            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/services")}>Services</button>
+            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/about")}>About</button>
+            <button className={styles.linkBtn} onClick={() => handleNavigate("/pro/areas")}>Areas</button>
+          
           <div className={`${styles['login']}`}>
             <Button to={"/"} backgroundColor={"var(--c12)"}>I need a Pro</Button>
 
-            <Button backgroundColor={"var(--c2)"}>Login</Button>
+            <Button to={"/pro/login"} backgroundColor={"var(--c2)"}>Login</Button>
           </div>
         </div>
       </div>

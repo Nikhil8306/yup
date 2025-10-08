@@ -56,7 +56,7 @@ function Header() {
         <button className={styles.linkBtn} onClick={() => handleNavigate("/areas")}>Areas</button>
 
         <div className={styles["login"]}>
-          <Button backgroundColor={"black"}>I'm a Pro</Button>
+          <Button to={"/pro"} backgroundColor={"black"}>I'm a Pro</Button>
           <Button
             backgroundColor={"var(--c2)"}
             to={"/login"}
