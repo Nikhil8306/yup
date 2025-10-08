@@ -1,32 +1,133 @@
 .container {
-    width: 100%;
-    padding: 0 9.2rem;
-    display: flex;
-    margin-top: 10rem;
+  width: 100%;
+  padding: 0 9.2rem;
+  display: flex;
+  margin-top: 10rem;
+  gap: 2rem;
+  align-items: center;
 }
 
 .image {
-    width: 50%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image > img {
-    object-fit: cover;
-    height: 80%;
-    width: 80%;
-    background-color: var(--c1);
-    border-radius: 1.5rem;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--c1);
+  border-radius: 1.5rem;
 }
 
-
 .content {
-    width: 50%;
-    padding: 4rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .button {
-    margin-top: 2rem;
+  margin-top: 1rem;
+  /* width: fit-content; */
+}
+
+/* Large Desktop */
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 6rem;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 4rem;
+    margin-top: 8rem;
+  }
+  
+  .content {
+    padding: 3rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Tablet - Stack vertically */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    padding: 0 3rem;
+    margin-top: 6rem;
+    gap: 3rem;
+  }
+  
+  .image {
+    width: 100%;
+    order: 1;
+  }
+  
+  .image > img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 0;
+    order: 2;
+    gap: 2rem;
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    margin-top: 5rem;
+    gap: 2.5rem;
+  }
+  
+  .content {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+  
+  .image > img {
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .content {
+    gap: 1.5rem;
+  }
+  
+  .button {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
+  
+  .content {
+    gap: 1rem;
+  }
 }

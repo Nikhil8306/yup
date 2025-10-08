@@ -1,0 +1,151 @@
+/* new CSS module, namespaced with swgOffer- to avoid collisions */
+
+.swgOffer-section {
+  background: var(--c9); /* deep navy background to match reference */
+  color: #e7f1ff;
+  padding: 5rem 9.2rem;
+}
+
+.swgOffer-container {
+  margin: 0 auto;
+  /* max-width: 1200px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.swgOffer-media {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #0e1a38;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.swgOffer-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swgOffer-content {
+  /* max-width: 620px; */
+  justify-self: start;
+}
+
+.swgOffer-title {
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 4px 0 16px;
+  letter-spacing: 0.2px;
+}
+
+.swgOffer-subtext {
+  color: #c5d7ef;
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 56ch;
+}
+
+.swgOffer-list {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.swgOffer-listItem {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  align-items: start;
+  gap: 12px;
+  color: #d6e5fb;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.swgOffer-check {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  translate: 0 3px; /* align with text baseline */
+}
+
+.swgOffer-ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin: 8px 0 28px;
+}
+
+.swgOffer-cta {
+  background: #4fb5c8; /* teal button */
+  color: #0a142b;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 6px 14px rgba(79, 181, 200, 0.35);
+  transition: transform 0.05s ease-in, box-shadow 0.2s ease-in, background 0.2s ease-in;
+}
+.swgOffer-cta:hover {
+  background: #57c3d6;
+  box-shadow: 0 8px 18px rgba(87, 195, 214, 0.45);
+}
+.swgOffer-cta:active {
+  transform: translateY(1px);
+}
+
+.swgOffer-badge {
+  display: grid;
+  gap: 2px;
+  text-align: right;
+}
+.swgOffer-badgeSmall {
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: #b8c7df;
+}
+.swgOffer-badgeBrand {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.swgOffer-fineprint {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 8px;
+  padding-top: 18px;
+  color: #98acc8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive: switch to two columns on medium+ screens */
+@media (min-width: 900px) {
+  .swgOffer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .swgOffer-media {
+    margin-left: 12px;
+  }
+  .swgOffer-content {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 767px) {
+    .swgOffer-section {
+        padding: 1rem 2rem;
+    }
+}

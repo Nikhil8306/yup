@@ -17,8 +17,12 @@ function ServicesHome () {
         <Services heading={"Explore Service Areas"}/>
         <Match/>
         <TrendingServices/>
-        <SearchBar/>
+        <div className={styles.find}>
+            <SearchBar/>
+
+        </div>
         <Testimonials/>
+        <div style={{height: "5rem"}}></div>
     </>
 }   
 
@@ -37,7 +41,9 @@ function Info() {
                     new look, Referral Source connects you with trusted local painters who can handle it all - from first quote to final coat.
                 </Description>
                 <br /><br />
+                <div className={styles.infofind}>
                 <SearchBar/>
+                </div>
             </div>
         </div>
     </>

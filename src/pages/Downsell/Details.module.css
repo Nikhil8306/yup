@@ -223,3 +223,9 @@
   border: 0;
   padding: 0;
 }
+
+@media (max-width: 767px) {
+    .rsw-container {
+        padding: 0 2rem;
+    }
+}

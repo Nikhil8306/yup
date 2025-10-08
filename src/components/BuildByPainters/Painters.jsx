@@ -1,5 +1,13 @@
+import p1 from "../../assets/p1.png";
+import p2 from "../../assets/p2.png";
+import p3 from "../../assets/p3.png";
+import p4 from "../../assets/p4.png";
+import logo  from "../../assets/logo.png";
 import "./features-section.css";
 import Heading from "../Heading";
+
+import Button from "../UI/Button/Button";
+
 export default function FeaturesSection() {
   return (
     <section className="features-section-unique">
@@ -24,24 +32,12 @@ export default function FeaturesSection() {
           <div className="feature-card-unique">
             <div className="feature-image-wrapper-unique">
               <img
-                src="/painter-in-shop-with-supplies.jpg"
+                src={p2}
                 alt="Professional painter in shop"
                 className="feature-image-unique"
               />
               <div className="feature-icon-unique">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="lightning-icon-unique"
-                >
-                  <path
-                    d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <img style={{width:"240%", height:"240%", objectFit: "cover", paddingTop: "26px"}} src={logo} alt="" />
               </div>
             </div>
             <h3 className="feature-heading-unique">
@@ -56,24 +52,13 @@ export default function FeaturesSection() {
           <div className="feature-card-unique">
             <div className="feature-image-wrapper-unique">
               <img
-                src="/painters-discussing-project.jpg"
+                src={p1}
                 alt="Painters discussing project"
                 className="feature-image-unique"
               />
               <div className="feature-icon-unique">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="lightning-icon-unique"
-                >
-                  <path
-                    d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <img style={{width:"240%", height:"240%", objectFit: "cover", paddingTop: "26px"}} src={logo} alt="" />
+
               </div>
             </div>
             <h3 className="feature-heading-unique">Estimate Ready Projects</h3>
@@ -86,24 +71,13 @@ export default function FeaturesSection() {
           <div className="feature-card-unique">
             <div className="feature-image-wrapper-unique">
               <img
-                src="/hand-with-clipboard-checklist.jpg"
+                src={p4}
                 alt="Hand holding clipboard with checklist"
                 className="feature-image-unique"
               />
               <div className="feature-icon-unique">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="lightning-icon-unique"
-                >
-                  <path
-                    d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <img style={{width:"240%", height:"240%", objectFit: "cover", paddingTop: "26px"}} src={logo} alt="" />
+               
               </div>
             </div>
             <h3 className="feature-heading-unique">No Upfront Costs</h3>
@@ -116,24 +90,13 @@ export default function FeaturesSection() {
           <div className="feature-card-unique">
             <div className="feature-image-wrapper-unique">
               <img
-                src="/person-working-at-desk-with-phone.jpg"
+                src={p3}
                 alt="Person working at desk"
                 className="feature-image-unique"
               />
               <div className="feature-icon-unique">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="lightning-icon-unique"
-                >
-                  <path
-                    d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <img style={{width:"240%", height:"240%", objectFit: "cover", paddingTop: "26px"}} src={logo} alt="" />
+                
               </div>
             </div>
             <h3 className="feature-heading-unique">Simplify Your Day</h3>
@@ -145,7 +108,7 @@ export default function FeaturesSection() {
 
         {/* CTA Button */}
         <div className="features-cta-unique">
-          <button className="features-button-unique">Join Now</button>
+          <Button backgroundColor={"var(--c2)"}>Join Now</Button>
         </div>
       </div>
     </section>

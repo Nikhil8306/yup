@@ -12,7 +12,7 @@ function Footer() {
                     Ready to Get Started?
                 </div>
                 <div className={styles.desc}>
-                    Are you ready to stop guessing and start painting? Try Referral Source and discover why more homeowners connect with painters on our platform than ever before.
+                    Are you ready to stop guessing and start painting? Try Referral Source and discover why more meowners connect with painters on our platform than ever before.
                 </div>
 
                 <Button backgroundColor={"var(--c2)"}>Learn More</Button>
@@ -40,7 +40,7 @@ function Footer() {
                 </div>
                 <div className={styles.f3}>
 
-                    <Heading className={styles.heading}>Get special offers from Referral Source</Heading>
+                    <Heading className={styles.f3heading}>Get special offers from Referral Source</Heading>
                     <div className={styles.input}>
                         <input type="text" placeholder="Enter you Email"/>
                         <button><ArrowBigRightIcon color="white"/></button>

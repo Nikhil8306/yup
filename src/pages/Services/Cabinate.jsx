@@ -51,7 +51,7 @@ function Cabinate() {
         <WhyReferral/>
         <Services heading={"Explore All Service Areas"}/>
         <Testimonials/>
-        <div style={{height: "10rem"}}></div>
+        <div style={{height: "5rem"}}></div>
     </>
 }
 

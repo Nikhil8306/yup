@@ -9,7 +9,7 @@ function AccentWall({title, subtitle, description, onClick, images}){
     <section className="aw">
       <div className="aw__inner">
         <div className="aw__copy">
-          <Heading className="aw__title">{title}</Heading>
+          <Heading >{title}</Heading>
           <p className="aw__subtitle">{subtitle}</p> <br />
           <Description className="aw__desc">{description}</Description>
           <br /><br />

@@ -56,9 +56,8 @@
 }
 
 /* Basic responsiveness (container already scales via clamp) */
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
   .pp-container {
-    margin-left: 96px; /* gives that generous left gutter feel on large screens */
-    margin-right: auto;
+   padding: 0 2rem;
   }
 }

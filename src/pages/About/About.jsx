@@ -41,10 +41,6 @@ function Trust() {
     </>
 }
 
-function Referral() {
-
-}
-
 function Info() {
     return <>
         <div className={styles.infocontainer}>

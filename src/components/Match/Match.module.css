@@ -52,6 +52,17 @@
   margin-top: 1rem;
 }
 
+@media (max-width: 1500px) {
+    .content{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .content {
+        padding: 5rem;
+    }
+}
 /* --- RESPONSIVE SECTION --- */
 @media (max-width: 1024px) {
   .container {

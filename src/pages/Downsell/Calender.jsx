@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
-
+import referalimg from "../../assets/logotext.png";
 const timeSlots = ["9:00", "2:00", "3:00", "3:30", "4:00", "4:30"]
 
 function addDays(date, days) {
@@ -87,7 +87,7 @@ export default function BookingScheduler({selectedDate, setSelectedDate, selecte
         <section className={styles["rs-scheduler__left"]} aria-labelledby="rs-title">
           <div className={styles["rs-scheduler__logo-card"]}>
             <img
-              src="/images/referral-source.png"
+              src={referalimg}
               alt="Referral Source logo"
               className={styles["rs-scheduler__logo-img"]}
             />

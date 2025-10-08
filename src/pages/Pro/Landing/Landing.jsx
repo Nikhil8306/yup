@@ -1,19 +1,27 @@
 import homepainter from "../../../assets/homepainter.png";
+import frontImage from "../../../assets/frontimage.png"; // ADD YOUR FRONT IMAGE HERE
+import backgroundImage from "../../../assets/backgroundimage.png"; // ADD YOUR BACKGROUND IMAGE HERE
 import Heading from "../../../components/Heading";
 import Button from "../../../components/UI/Button/Button";
 import { PlayCircleIcon } from "lucide-react";
 import VideoHolder from "../../../components/VideoHolder/VideoHolder";
+import Painters from "../../../components/BuildByPainters/Painters.jsx";
+import Testimonials from "../../../components/Testimonials/Testimonials.jsx";
+import Giftcard from "../../../components/Giftcard/Giftcard.jsx";
+import "./rs-hero.css";
 
-import Painters from "../../../components/BuildByPainters/Painters.jsx"
-function Landing () {
-    return <>
-        <RsHero/>
-        <VideoHolder/>
-        <Painters/>
+function Landing() {
+  return (
+    <>
+      <RsHero />
+      <VideoHolder />
+      <Painters />
+      <Giftcard />
+      <Testimonials />
+      <div style={{ height: "5rem" }}></div>
     </>
+  );
 }
-
-import "./rs-hero.css"
 
 function RsHero() {
   return (
@@ -21,11 +29,11 @@ function RsHero() {
       <div className="rshero__inner">
         <div className="rshero__left">
           <header className="rshero__header">
-            <div id="rshero-title" >
+            <Heading >
               Grow Your
               <br />
               Painting Business
-            </div>
+            </Heading>
             <p className="rshero__subtitle">
               Get ready-to-paint customers delivered to your calendar at $0 per lead. Paint &amp; get paid with Referral
               Source. Book a demo to learn how it works.
@@ -38,9 +46,7 @@ function RsHero() {
             </Button>
             <Button className="btn" backgroundColor={"var(--c12)"} type="button">
               <span className="rshero-btn__icon" aria-hidden="true">
-                {/* Play icon */}
-              Learn How It Works <PlayCircleIcon style={{marginLeft: "1rem"}} strokeWidth={"1px"}/>
-               
+                Learn How It Works <PlayCircleIcon style={{ marginLeft: "1rem" }} strokeWidth={"1px"} />
               </span>
             </Button>
           </div>
@@ -91,20 +97,26 @@ function RsHero() {
         </div>
 
         <div className="rshero__right" aria-hidden="true">
-          <picture>
-            <source  media="(min-width: 900px)" />
-            <img
-              className="rshero__art"
-              src={homepainter}
-              alt="painter"
-            />
-          </picture>
+          <div className="rshero__image-container">
+            {/* Background image (blurred) */}
+            {/* <div className="rshero__image-background">
+              <img src={backgroundImage} alt="" />
+            </div>
+             */}
+            {/* Main image */}
+            <div className="rshero__image-main">
+              <img src={homepainter} alt="Professional painter at work" />
+            </div>
+            
+            {/* Front overlay image (lower left) */}
+            {/* <div className="rshero__image-front">
+              <img src={frontImage} alt="Painting detail" />
+            </div> */}
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-import styles from "./Landing.module.css";
 
 export default Landing;

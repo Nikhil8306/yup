@@ -96,7 +96,7 @@ function Details({ data, setData, prev, next }) {
                 Back
               </Button>
               <Button backgroundColor="var(--c2)" color="white" onClick={next}>
-                Go to Step 3
+                Finish
               </Button>
             </div>
           </div>

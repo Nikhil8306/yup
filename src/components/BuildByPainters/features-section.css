@@ -1,11 +1,10 @@
 .features-section-unique {
   width: 100%;
-  padding: 80px 20px;
+  padding: 9.2rem;
   background-color: #f8f9fa;
 }
 
 .features-container-unique {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -44,35 +43,42 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 1rem;
+  background-color: #edeff8;
+  border-radius: 1rem;
 }
 
 .feature-image-wrapper-unique {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+ position: relative;
+ width: 100%;
+ margin-bottom: 20px;
+ overflow: visible; /* Changed from hidden to visible */
+ border-radius: 12px;
 }
 
 .feature-image-unique {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
+ width: 100%;
+ height: 300px;
+ object-fit: cover;
+ object-position: top;
+ border-radius: 12px;
+ display: block;
+ overflow: hidden; /* Add this to maintain the border-radius clipping on the image itself */
 }
-
 .feature-icon-unique {
   position: absolute;
-  bottom: -20px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
-  background-color: #1e3a5f;
+  width: 80px;
+  height: 80px;
+  background-color: var(--c9);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+    border: solid white 3px;
 }
 
 .lightning-icon-unique {
@@ -129,9 +135,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 30px;
   }
-
+  
   .features-title-unique {
     font-size: 2rem;
+  }
+  
+  .feature-image-unique {
+    height: 280px;
   }
 }
 
@@ -140,32 +150,32 @@
   .features-section-unique {
     padding: 60px 20px;
   }
-
+  
   .features-header-unique {
     margin-bottom: 40px;
   }
-
+  
   .features-title-unique {
     font-size: 1.75rem;
   }
-
+  
   .features-subtitle-unique {
     font-size: 1rem;
   }
-
+  
   .features-grid-unique {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-
+  
   .feature-image-unique {
-    height: 200px;
+    height: 240px;
   }
-
+  
   .feature-heading-unique {
     font-size: 1.125rem;
   }
-
+  
   .feature-description-unique {
     font-size: 0.875rem;
   }
