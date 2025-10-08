@@ -1,7 +1,9 @@
 import "./App.css";
 
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Router } from 'react-router-dom';
+
+import ScrollToTop from "./pages/ScrollToTop.jsx";
 
 // consumer page
 import Consumer from './pages/Consumer/Consumer.jsx';
@@ -42,6 +44,8 @@ function App() {
     return (
 
         <BrowserRouter>
+
+            <ScrollToTop/>
             <Routes>
 
                 <Route path="/" element={<Consumer/>}>
@@ -92,6 +96,7 @@ function App() {
 
 
             </Routes>
+
         </BrowserRouter>
 
     )

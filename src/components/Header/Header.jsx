@@ -59,7 +59,7 @@ function Header() {
           <Button backgroundColor={"black"}>I'm a Pro</Button>
           <Button
             backgroundColor={"var(--c2)"}
-            onClick={() => handleNavigate("/login")}
+            to={"/login"}
           >
             Login
           </Button>
