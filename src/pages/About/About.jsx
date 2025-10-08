@@ -55,7 +55,7 @@ function Info() {
                     Wheather it's refreshing a single room or giving your whole house a brand 
                     new look, Referral Source connects you with trusted local painters who can handle it all - from first quote to final coat.
                 </Description>
-                <br /><br />
+                <br /><br /> <br />
                 <SearchBar/>
             </div>
         </div>
