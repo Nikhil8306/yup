@@ -15,21 +15,27 @@ function Home() {
             
             <div className={styles.content}>
 
-                <div className={styles.head}>Find the <br/> Perfect Painter.</div>
-                <div className={styles.description}>
-                    Answer a few quick questions and get matched with up to 3 top-rated pros in your area — no spam, no pressure.
+                <div className={styles.sec1}>
+
+                    <div className={styles.head}>Find the <br/> Perfect Painter.</div>
+                    <div className={styles.description}>
+                        Answer a few quick questions and get matched with up to 3 top-rated pros in your area — no spam, no pressure.
+                    </div>
+
                 </div>
 
                 <div className={styles.painter}>
                     <img src={painter} alt="Painter" className={styles.painterimg}/>
                 </div>
 
-                <div className={styles.find}>
-                    <SearchBar></SearchBar>
-                </div>
-                
-                <div className={styles.end}>
-                    The Marketplace to Connect with Pros
+                <div className={styles.sec2}>
+                    <div className={styles.find}>
+                        <SearchBar></SearchBar>
+                    </div>
+                    
+                    <div className={styles.end}>
+                        The Marketplace to Connect with Pros
+                    </div>
                 </div>
 
             </div>

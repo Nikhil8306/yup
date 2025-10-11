@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import logo from "../../assets/logotext.png";
-import Link from "../UI/Link/Link.jsx";
 import Button from "../UI/Button/Button.jsx";
 import styles from "./Header.module.css";
 
@@ -13,7 +12,7 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Central function to handle navigation and close menu
+  
   const handleNavigate = (path) => {
     setIsMenuOpen(false);
     navigate(path);
@@ -21,7 +20,6 @@ function Header() {
 
   return (
     <div className={styles["container"]}>
-      {/* Hamburger Icon */}
       <button 
         className={`${styles["hamburger"]} ${isMenuOpen ? styles["hamburger-open"] : ""}`}
         onClick={toggleMenu}
@@ -38,7 +36,6 @@ function Header() {
         </NavLink>
       </div>
 
-      {/* Mobile Login Button */}
       <div className={styles["mobile-login"]}>
         <Button
             to={"/login"}
@@ -49,7 +46,6 @@ function Header() {
         </Button>
       </div>
 
-      {/* Navigation */}
       <div className={`${styles["navigations"]} ${isMenuOpen ? styles["navigations-open"] : ""}`}>
         <button className={styles.linkBtn} onClick={() => handleNavigate("/how")}>How It Works</button>
         <button className={styles.linkBtn} onClick={() => handleNavigate("/services")}>Services</button>

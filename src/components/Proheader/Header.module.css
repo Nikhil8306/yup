@@ -31,7 +31,6 @@
   gap: 0.4rem;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -63,12 +62,18 @@
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Mobile Login Button */
 .mobile-login {
   display: none;
 }
 
-/* Mobile - Trigger at 1500px */
+.linkBtn {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
 @media (max-width: 1500px) {
   .container {
     justify-content: space-between;
@@ -121,7 +126,6 @@
   }
 }
 
-/* Small screens */
 @media (max-width: 768px) {
   .container {
     padding: 0 2rem;
@@ -143,10 +147,3 @@
   }
 }
 
-.linkBtn {
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
-}
